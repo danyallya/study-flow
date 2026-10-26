@@ -3,9 +3,12 @@
 Review prior code and Git diff, check backlog and debug open defects. Add/update tests for changed timer/plan behavior, implement today's ticket, run tests/typecheck/build, update docs and backlog, then prepare tomorrow. Note unavailable checks and continue static review. Add discoveries with rationale and priority.
 
 ## Foundation status
-Day 00 study workspace, focus timer presentation, plan list, rhythm summary, theme toggle and shadcn-style local components are scaffolded. No dependencies are installed and no build/test validation has run. Nexus .npmrc is local and ignored.
+Day 00 study workspace, focus timer presentation, plan list, rhythm summary, theme toggle and shadcn-style local components are ready. Dependencies and lockfile are installed; smoke test (1/1), typecheck and production build passed. This Vite template has no standalone lint script. Nexus .npmrc is local and ignored.
 
 ## Daily tickets
+### Day 00 verification
+Nexus returned 404 for packages used by this project. Following the user's approval, dependencies were installed with npmjs fallback; the ignored local .npmrc keeps Nexus as default and contains only required scope overrides. Day 01 has not started.
+
 | Day | Deliverable |
 |---|---|
 | 01 | Define study session, subject and repeat-schedule models. |

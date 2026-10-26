@@ -10,7 +10,7 @@ The starter does not persist data and the timer is a UI foundation. The 30-day r
 ## Run locally
 Use Node.js 20 or newer. The local .npmrc is ignored by Git.
 
-    npm install
+    npm ci
     npm run dev
 
 Run npm test, npm run typecheck and npm run build before a release. The interface adapts to phone, tablet and desktop and includes light and dark themes.

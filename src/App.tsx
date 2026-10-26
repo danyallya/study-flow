@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiActivity, FiArrowRight, FiBookOpen, FiCalendar, FiCheck, FiChevronDown, FiClock, FiHeadphones, FiMoon, FiMoreHorizontal, FiPause, FiPlay, FiPlus, FiSun, FiTarget } from 'react-icons/fi';
+import { FiActivity, FiArrowRight, FiBookOpen, FiCalendar, FiCheck, FiChevronDown, FiHeadphones, FiMoon, FiMoreHorizontal, FiPause, FiPlay, FiPlus, FiSun, FiTarget } from 'react-icons/fi';
 import { Button } from './components/ui/button';
 import { Card } from './components/ui/card';
 const sessions=[{time:'09:00',title:'Statistics / Chapter 04',length:'45 min',tone:'violet',done:true},{time:'10:15',title:'Biology / Cell structures',length:'35 min',tone:'blue',done:false},{time:'13:30',title:'Spanish / Listening practice',length:'25 min',tone:'rose',done:false}];
