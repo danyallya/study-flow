@@ -38,3 +38,7 @@ Historical Day 00/01 entries describe their original workflow. This policy super
 A timer-transition repair and an independently complete weekly-plan view may merit different commits. Duration fixes, their regression cases and explanatory copy can form one coherent unit.
 
 Next planned scope: Day 02 — accurate elapsed-time timer state, pause/resume and session completion.
+
+## Contribution evidence
+
+Follow [CONTRIBUTING.md](CONTRIBUTING.md) within the existing delivery scope. Consider a reproducible pause/resume timing case with elapsed-time expectations. Keep real issue links and agreed coauthor attribution with the matching change. Profile goals do not change commit counts, review gates, day numbering or authorization for external contact/settings/payment.
