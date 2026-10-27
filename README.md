@@ -20,3 +20,7 @@ Support sustainable study habits with flexible plans, rest and encouraging langu
 
 ### Study session and repeat schedule model
 `src/domain/study.ts` defines date-only study plans, subject-linked sessions, and daily/weekly repeat schedules. Session times are local `HH:MM` values; durations must be 5–240 minutes. Weekly schedules require at least one unique weekday, while daily schedules do not use weekday selections. The current three-session plan and Tuesday Spanish schedule are fictional in-memory examples and reset on reload; the timer is still a visual foundation.
+
+## Delivery and review
+
+Stillroom review checks elapsed-time accuracy, pause/resume/completion semantics and honest persistence claims while preserving supportive language and private learner progress. Follow [DELIVERY-POLICY.md](DELIVERY-POLICY.md) from Day 02 for sequential execution, scope-driven commits and this repository's separate branch/PR with GitHub panel review and merge.

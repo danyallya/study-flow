@@ -46,3 +46,7 @@ Mark each day Done, In progress or Blocked. Keep the next ticket ready and add d
 
 - Day 01: Done. The sample plan and repeat schedule now use typed, validated records; demo activity is labeled and no streak claim is shown. Next is Day 02, accurate timer state, pause/resume and completion behavior.
 - Review carry-over for Day 02: the visible 25-minute timer remains presentation-only and is not yet tied to elapsed time or the selected session duration.
+
+## Process change effective Day 02 — 2026-10-27
+
+Apply [DELIVERY-POLICY.md](DELIVERY-POLICY.md) to every remaining ticket: finish Stillroom before the next repository, use meaningful scope-driven commits and deliver through its own reviewed PR. A blocked external gate needs a concrete record and next action. This adds delivery gates without moving Day 02–30 product work or changing completed history.
