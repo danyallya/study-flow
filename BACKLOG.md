@@ -11,7 +11,7 @@ Nexus returned 404 for packages used by this project. Following the user's appro
 
 | Day | Deliverable |
 |---|---|
-| 01 | Define study session, subject and repeat-schedule models. |
+| 01 | **Done** — define typed subject/session/plan/repeat-schedule models and validate dates, local times, duration, subject links and recurrence choices. |
 | 02 | Implement accurate timer state, pause/resume and completion behavior. |
 | 03 | Add timer preferences for session and rest duration. |
 | 04 | Add session editor with subject, estimate and flexible time window. |
@@ -43,3 +43,6 @@ Nexus returned 404 for packages used by this project. Following the user's appro
 | 30 | Release-candidate review, all checks, known limits and release notes. |
 
 Mark each day Done, In progress or Blocked. Keep the next ticket ready and add discoveries with rationale.
+
+- Day 01: Done. The sample plan and repeat schedule now use typed, validated records; demo activity is labeled and no streak claim is shown. Next is Day 02, accurate timer state, pause/resume and completion behavior.
+- Review carry-over for Day 02: the visible 25-minute timer remains presentation-only and is not yet tied to elapsed time or the selected session duration.

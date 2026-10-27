@@ -17,3 +17,6 @@ Run npm test, npm run typecheck and npm run build before a release. The interfac
 
 ## Product principles
 Support sustainable study habits with flexible plans, rest and encouraging language. Do not use streaks to shame or rank learners. Keep progress private by default, make motion optional, and design controls for keyboard and screen-reader use.
+
+### Study session and repeat schedule model
+`src/domain/study.ts` defines date-only study plans, subject-linked sessions, and daily/weekly repeat schedules. Session times are local `HH:MM` values; durations must be 5–240 minutes. Weekly schedules require at least one unique weekday, while daily schedules do not use weekday selections. The current three-session plan and Tuesday Spanish schedule are fictional in-memory examples and reset on reload; the timer is still a visual foundation.
