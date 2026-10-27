@@ -24,3 +24,7 @@ Support sustainable study habits with flexible plans, rest and encouraging langu
 ## Delivery and review
 
 Stillroom review checks elapsed-time accuracy, pause/resume/completion semantics and honest persistence claims while preserving supportive language and private learner progress. Follow [DELIVERY-POLICY.md](DELIVERY-POLICY.md) from Day 02 for sequential execution, scope-driven commits and this repository's separate branch/PR with GitHub panel review and merge.
+
+## Contributions and examples
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for reproducible reports, genuine collaboration and product examples such as a supportive study-session walkthrough with synthetic progress. Contributions follow the product backlog and reviewed PR workflow.
