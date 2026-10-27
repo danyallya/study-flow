@@ -16,3 +16,10 @@
 - Checks: `npm test -- --reporter=dot` passed (2 files, 5 tests); `npm run typecheck` passed; `npm run build` passed, including PWA generation. `git diff --check` passed. `.npmrc` remains ignored.
 - GitHub: implementation commit `88b75f3` (`feat: model study plans and repeat schedules`) was pushed to `day-01/study-models`, fast-forwarded to `main`, and `main` was pushed. This Day 01 log entry is committed and included in the final sync below.
 - Next: Day 02 — implement timer state with elapsed time, pause/resume and session completion behavior.
+
+## Review workflow maintenance — 2026-10-27
+
+- The user requested careful sequential project execution, commit content/counts suited to each product and an independent branch/PR per repository with panel review and merge.
+- Stillroom review checks elapsed-time accuracy, pause/resume/completion semantics and honest persistence claims while preserving supportive language and private learner progress. Added a standalone delivery policy and entry points in AGENTS, README and BACKLOG.
+- Documentation-only maintenance on `docs/stillroom-timer-review`; Markdown diff reviewed and `git diff --check` used. No application tests/build rerun for this process change. Next product work: Day 02 — accurate elapsed-time timer state, pause/resume and session completion.
+- This is the pre-merge log state. The portfolio workspace DELIVERY-RECEIPTS.md records the actual PR URL, checked head, panel gates, merge SHA and sync afterward; reconcile it here in the next authorized update.

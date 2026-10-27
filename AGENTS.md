@@ -8,3 +8,9 @@
 - Update BACKLOG.md every session, record discoveries and leave tomorrow's scope explicit.
 - Keep .npmrc ignored and local. Do not commit credentials, private learner data, .env or build output. Never force-push or rewrite history.
 - Work only in this repository; make meaningful commits after checks pass.
+
+## Delivery from Day 02
+
+- Read and follow [DELIVERY-POLICY.md](DELIVERY-POLICY.md). Finish Stillroom and its own PR panel review, merge and sync before the next portfolio repository, or record an exact external blocker. No concurrent project or subagent work.
+- Choose commit counts, boundaries, content and wording from this product's real changes; do not copy a fixed history pattern from other projects.
+- Review the latest pushed head and checks in GitHub and merge through this repository's PR panel. Respect required independent approvals; self-review does not replace them.
