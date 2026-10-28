@@ -31,3 +31,11 @@
 - Documentation-only scope on docs/stillroom-timing-help; reviewed Markdown and git diff --check. App tests/build are not rerun because runtime behavior is unchanged.
 - External blocker: local browser use is disabled in Work settings. PR creation, panel review and merge remain pending; resume from this branch when browser access is available, inspect existing PRs first, target main and follow all gates.
 - Publication is pre-merge here; the final PR/head/panel/check/merge/sync evidence goes in the workspace DELIVERY-RECEIPTS.md after completion. Next: Day 02 — accurate elapsed-time timer state, pause/resume and session completion. Wait for the user's day trigger.
+
+## Day 02 — elapsed focus session — 2026-10-28
+
+- Reconciled merged policy/contribution PRs #1/#2 at origin/main e9f1fab; reviewed prior study types and plan fixtures. The display claimed 25 minutes while the focused session lasts 45; the timer now uses that session duration.
+- Added pure elapsed-time transitions with a monotonic clock, pause/resume, delayed-callback catch-up and clamped completion. UI cleans up intervals/listeners, announces transitions rather than seconds and emits completion once. Deliberate early completion is explicit; the focused plan row updates while weekly fixtures remain illustrative. No persistence or notification claim.
+- Final suite: 4 files, 10 tests passed; npm run build passed including typecheck/PWA; final typecheck and diff check passed. An added app assertion initially failed because the duration/status text shares a node; corrected the assertion and reran all tests. No lint script. All changed files locally read; ignored config/build output excluded.
+- Useful contribution cases cover delayed callbacks, paused time and repeated completion without real learner data. Work browser disabled: actual background/sleep/keyboard/layout/theme review and PR/panel Checks/files/conversation/merge/sync pending on day-02/elapsed-focus-session. No CI or badge claim.
+- Next: finish Day 02 delivery gates; Day 03 session/rest preferences on its manual trigger. Device sleep behavior remains an explicit browser validation risk.

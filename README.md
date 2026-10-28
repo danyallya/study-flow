@@ -28,3 +28,7 @@ Stillroom review checks elapsed-time accuracy, pause/resume/completion semantics
 ## Contributions and examples
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for reproducible reports, genuine collaboration and product examples such as a supportive study-session walkthrough with synthetic progress. Contributions follow the product backlog and reviewed PR workflow.
+
+## Elapsed-time focus session
+
+The current session uses its plan duration (45 minutes in the sample), a monotonic performance clock and accumulated elapsed time. Interval/visibility callbacks refresh the display rather than counting ticks, so delayed callbacks catch up. Pause excludes waiting time; Resume retains progress. Natural or deliberate completion clamps at zero, disables further completion/resume and updates the sample list once. Status announcements occur on transitions rather than every second. The timer and completion reset on reload, do not send notifications or update the illustrative weekly totals. Session/rest preferences remain Day 03; browser background/sleep behavior and visual/keyboard review require actual browser validation, currently blocked by Work settings.
