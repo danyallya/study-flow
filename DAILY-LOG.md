@@ -31,3 +31,25 @@
 - Documentation-only scope on docs/stillroom-timing-help; reviewed Markdown and git diff --check. App tests/build are not rerun because runtime behavior is unchanged.
 - External blocker: local browser use is disabled in Work settings. PR creation, panel review and merge remain pending; resume from this branch when browser access is available, inspect existing PRs first, target main and follow all gates.
 - Publication is pre-merge here; the final PR/head/panel/check/merge/sync evidence goes in the workspace DELIVERY-RECEIPTS.md after completion. Next: Day 02 — accurate elapsed-time timer state, pause/resume and session completion. Wait for the user's day trigger.
+
+## Day 02 — elapsed focus session — 2026-10-28
+
+- Reconciled merged policy/contribution PRs #1/#2 at origin/main e9f1fab; reviewed prior study types and plan fixtures. The display claimed 25 minutes while the focused session lasts 45; the timer now uses that session duration.
+- Added pure elapsed-time transitions with a monotonic clock, pause/resume, delayed-callback catch-up and clamped completion. UI cleans up intervals/listeners, announces transitions rather than seconds and emits completion once. Deliberate early completion is explicit; the focused plan row updates while weekly fixtures remain illustrative. No persistence or notification claim.
+- Final suite: 4 files, 10 tests passed; npm run build passed including typecheck/PWA; final typecheck and diff check passed. An added app assertion initially failed because the duration/status text shares a node; corrected the assertion and reran all tests. No lint script. All changed files locally read; ignored config/build output excluded.
+- Useful contribution cases cover delayed callbacks, paused time and repeated completion without real learner data. At the time of the initial push, Work browser access was disabled; no CI or badge result was claimed. Follow-up browser and GitHub evidence is recorded below.
+- Next: finish Day 02 delivery gates; Day 03 session/rest preferences on its manual trigger. Device sleep behavior remains an explicit browser validation risk.
+
+## Day 02 delivery follow-up — 2026-10-28
+
+- Browser review at a 390px viewport covered starting, pausing, resuming, visible keyboard focus, theme toggle and page width; no horizontal overflow was seen. A short hidden-tab run showed 44:55 at 06:18:21.800 UTC and 44:02 at 06:19:14.875 UTC, a 53.075-second wall interval and 53 displayed seconds. This single short run does not establish prolonged background throttling or operating-system sleep behavior.
+- Issue #3 remains open for other browser/OS combinations, delayed callbacks, sleep/wake while running and paused, and a documented sleep-time policy. The measured sample and limitations were added to the GitHub issue. Code review also identified the future duration-prop reset case; Issue #5 tracks it without expanding Day 02 implementation.
+- The README now reflects the browser evidence. The PR remains Draft until sleep/wake acceptance is verified. No independent review or merge is claimed here; see the workspace delivery receipt for exact-head panel status and the external blocker.
+- Next: resume Issue #3's OS sleep/wake evidence safely, then continue Day 03 timer preferences only when manually triggered.
+
+## Day 04 request — prerequisite gate resume — 2026-10-31, Asia/Tehran
+
+- The Day 04 request cannot start in this repository because its Day 02 PR remains Draft pending Issue #3 acceptance. Refreshed `origin`; at the gate recheck the clean `day-02/elapsed-focus-session` branch and PR #4 were at `e39d9c1568d19b0fcfe1abed8f9597588dc2ad67`, explicitly targeting `main`. GitHub's previous exact-head review covered 10 files; Checks showed 0 configured runs, conversation showed no conflicts, and the author's review is COMMENTED rather than independent approval. The documentation-only update requires a fresh exact-head panel review.
+- Issue #3 requires a foreground baseline, hidden-tab delayed-callback behavior, sleep/wake while running and paused, and once-only completion, plus a documented sleep-time policy. The existing single 53.075-second hidden-tab sample does not cover OS sleep/wake. No OS sleep test was performed because the workspace handoff forbids inducing sleep on the user's device. A separate controlled browser/OS or user-supplied observations are still needed.
+- No application code changed and no tests/build were rerun. The prior code head `0666aaf` passed 10 tests, typecheck and production/PWA build; the docs-only PR head `e39d9c1` passed `git diff --check`. This entry records the blocked requested day; it does not mark Day 02 delivered or start Day 03/04 work.
+- Next: obtain safe sleep/wake evidence on an isolated or secondary device, or receive the user's measured environment/results; then update the timing policy and regressions only if findings require it, re-review the exact PR head, and finish Day 02 delivery before a later day trigger.
