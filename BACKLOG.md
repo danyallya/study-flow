@@ -13,8 +13,8 @@ Nexus returned 404 for packages used by this project. Following the user's appro
 |---|---|
 | 01 | **Done** — define typed subject/session/plan/repeat-schedule models and validate dates, local times, duration, subject links and recurrence choices. |
 | 02 | Implemented, delivery blocked — elapsed timer, pause/resume and sample-session completion; browser/PR panel gates pending. |
-| 03 | Add timer preferences for session and rest duration; resolve or explicitly account for Issue #5 when a selected duration changes. |
-| 04 | Add session editor with subject, estimate and flexible time window. |
+| 03 | **Blocked by Day 02 delivery** — add timer preferences for session and rest duration; resolve or explicitly account for Issue #5 when a selected duration changes. |
+| 04 | **Blocked by Day 02 and Day 03** — add session editor with subject, estimate and flexible time window. |
 | 05 | Add daily plan reorder, completion and gentle rescheduling. |
 | 06 | Add subject library with color-safe identifiers and notes. |
 | 07 | Review timer and plan behavior, add tests and fix edge cases. |
